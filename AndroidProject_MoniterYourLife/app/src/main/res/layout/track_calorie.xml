@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="20dp"
+    android:background="@drawable/wall4">
+
+    <TextView
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set Goal:"
+        android:id="@+id/textView16"
+        android:layout_weight="0.07"
+        android:layout_marginTop="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calorie Consumed:"
+        android:id="@+id/textView17"
+        android:layout_weight="0.07"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calorie Burned:"
+        android:id="@+id/textView18"
+        android:layout_weight="0.07"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:textColor="#FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Remaining Goal:"
+        android:id="@+id/textView19"
+        android:layout_weight="0.07"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#33691E"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/goalTxt"
+        android:layout_above="@+id/textView17"
+        android:layout_toStartOf="@+id/calorieConsumeTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView21"
+        android:layout_above="@+id/textView18"
+        android:layout_toEndOf="@+id/goalTxt" />
+
+    <TextView
+        android:textColor="#FFFF"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/calorieBurnedTxt"
+        android:layout_above="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+    
+
+    <TextView
+        android:textColor="#FFFF"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/remainTxt"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:textColor="#33691E"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/calorieConsumeTxt"
+        android:layout_above="@+id/textView18"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Track your Calorie"
+        android:id="@+id/textView27"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/calorieConsumeTxt" />
+
+</RelativeLayout>

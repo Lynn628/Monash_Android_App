@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/wall4" >
+
+    <TextView
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date"
+        android:id="@+id/timeTxt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#33691E"
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calorie Goal:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/timeTxt"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/calorieGoalEditV"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET/RESET"
+        android:id="@+id/resetBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/calorieGoalEditV" />
+
+    <TextView
+        android:textColor="#7CB342"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/showCalorie"
+        android:text="calorie"
+        android:layout_above="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set/Reset goal:"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>

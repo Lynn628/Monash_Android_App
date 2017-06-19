@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+   android:padding="20dp"
+
+    tools:context="com.example.s17.moniteryourlife.ProgressDuringPeriodActivity"
+    tools:showIn="@layout/activity_progress_during_period"
+    android:background="@drawable/wall4">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:id="@+id/periodGraph"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#2E7D32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date Begin:"
+        android:id="@+id/textView24"
+        android:layout_above="@+id/peroidBtn"
+        android:layout_alignStart="@+id/textView26" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/beginDate"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24" />
+
+    <TextView
+        android:textColor="#2E7D32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date End:"
+        android:id="@+id/textView25"
+        android:layout_alignBottom="@+id/endDate"
+        android:layout_toStartOf="@+id/endDate" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/endDate"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/periodGraph"
+        android:layout_toEndOf="@+id/textView24" />
+
+    <TextView
+        android:textSize="30dp"
+        android:textColor="#2E7D32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Progress of a Period"
+        android:id="@+id/textView26"
+        android:layout_above="@+id/beginDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:id="@+id/peroidBtn"
+        android:layout_alignBottom="@+id/endDate"
+        android:layout_alignEnd="@+id/periodGraph" />
+
+</RelativeLayout>

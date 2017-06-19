@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.s17.moniteryourlife.FoodDetailActivity"
+    android:background="#FFFF">
+
+    <TextView
+        android:textSize="18dp"
+        android:paddingBottom="8dp"
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FoodName:"
+        android:id="@+id/showFoodName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/bingImage"
+        android:layout_alignTop="@+id/bingInfo"
+        android:layout_alignEnd="@+id/nuritionInfo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To My Diet"
+        android:id="@+id/foodItemAdd"
+        android:layout_below="@+id/nuritionInfo"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:textColor="#689f38"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Basic Information"
+        android:id="@+id/bingInfo"
+        android:layout_below="@+id/showFoodName"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/bingImage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nutrition Information"
+        android:id="@+id/nuritionInfo"
+        android:layout_below="@+id/bingInfo"
+        android:layout_alignParentEnd="true"
+        android:textSize="18dp"
+        android:textColor="#8BC34A"
+       />
+
+    <EditText
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountEdit"
+        android:layout_alignTop="@+id/foodItemAdd"
+        android:layout_toEndOf="@+id/textView20"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Amount:"
+        android:id="@+id/textView20"
+        android:layout_alignBottom="@+id/amountEdit"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

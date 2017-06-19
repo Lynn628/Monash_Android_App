@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/wall4">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="290dip"
+        android:id="@+id/stepGraph"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textSize="26dp"
+        android:padding="28dp"
+        android:textColor="#2E7D32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Progress Graphic Report"
+        android:id="@+id/textView22"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:textColor="#2E7D32"
+        android:paddingLeft="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Input Date:"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressDate"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Step"
+        android:id="@+id/viewBtn"
+        android:layout_below="@+id/textView23"
+        android:layout_alignStart="@+id/textView22" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View period"
+        android:id="@+id/viewPeriodBtn"
+        android:layout_below="@+id/progressDate"
+        android:layout_alignEnd="@+id/textView22" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Daliy"
+        android:id="@+id/nextGraphicView"
+        android:layout_below="@+id/textView23"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
